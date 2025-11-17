@@ -30,12 +30,15 @@ host:
          Steven T. Newcomb (Shawnee/Lenape) has been researching the history of U.S. federal Indian law and policy for four decades.
       image: "/img/steven.webp"
       social: 
-        - title: Steven facebook
+        - title: Steven on facebook
           icon: fab fa-facebook
-          url: https://facebook.com
-        - title: Steven X
+          url: https://facebook.com/stevennewcomb
+        - title: Steven on X
           icon: fab fa-x-twitter
-          url: https://x.com
+          url: https://x.com/originally_free
+        - title: Steven on Vimeo
+          icon: fab fa-vimeo
+          url: https://vimeo.com/ondemand/dominationcode
 
 # episode widget
 episode: 
@@ -55,5 +58,5 @@ form:
  title: Contact Form
  button: "Send Message"
  text: |
-   or you can sent email dirrectly on [info@domain.com](mailto:info@domain.com)
+   or you can sent email dirrectly on [info@dominationchronicles.com](mailto:info@dominationchronicles.com)
 
