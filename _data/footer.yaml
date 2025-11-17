@@ -47,5 +47,8 @@ menu3:
    - title: "X"
      icon: "fab fa-x-twitter"
      url: "https://www.youtube.com/@DominationChronicles"
+   - title: "Watch our Films"
+     icon: "fas fa-vimeo"
+     url: "https://vimeo.com/ondemand/dominationcode"
 
 copyrights: " Domination Chronicles"
