@@ -1,9 +1,9 @@
-title: "Domination Chronicles"
-description: "Domination Chronicles Podcast"
+title: "Domination Chronicles Podcast"
+description: "Because domination isn’t a metaphor—it’s a system."
 image: "img/banner-full.jpg"
 language: "en"
 locale: en_US
-favicon: "/img/icon.webp"
+favicon: "/img/icon.svg"
 # production URL
 #url: ""
 # dev mode URL
@@ -24,3 +24,4 @@ metasocial:
 author: 
  name: Adam Dj Brett
  url: https://adamdjbrett.com
+ email: podcast@dominationchronicles.com

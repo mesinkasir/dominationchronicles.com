@@ -1,9 +1,8 @@
 # Footer area 1
 title: "Domination Chronicles"
-image: "/img/icon.webp"
+image: "/img/icon.svg"
 text: |
-   welcome to podcast chanel you can [Subscribe our youtube chanel now !!](https://www.youtube.com/@DominationChronicles)
-
+   *Because domination isn’t a metaphor—it’s a system*
 # Footer area 2 Menu 1
 menu1: 
  title: Menu
@@ -48,7 +47,7 @@ menu3:
      icon: "fab fa-x-twitter"
      url: "https://www.youtube.com/@DominationChronicles"
    - title: "Watch our Films"
-     icon: "fas fa-vimeo"
+     icon: "fab fa-vimeo"
      url: "https://vimeo.com/ondemand/dominationcode"
 
 copyrights: " Domination Chronicles"

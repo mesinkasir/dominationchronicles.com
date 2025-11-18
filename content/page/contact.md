@@ -4,4 +4,4 @@ title: Contact Us
 description: How to contact us
 permalink: /contact/
 ---
-You can contact us, using contact form.
+You can contact us, using contact form. 

@@ -11,9 +11,9 @@ show_page_menu: true
 list: 
 
 # List 1 example without menu 
- - title: Domination Chronicles
-   text: "Domination Chronicles Podcast"
-   image: "/img/icon.webp"
+ - title: Domination Chronicles Podcast
+   text: "Because domination isn’t a metaphor—it’s a system."
+   image: "/img/icon.svg"
 
 # List 2 example with menu
  - title: About Us
