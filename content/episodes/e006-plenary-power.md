@@ -1,8 +1,8 @@
 ---
-title: "Supreme Court Justices Attack “plenary power” over Native Peoples"
+title: "Supreme Court Justices Attack 'plenary power' over Native Peoples"
 description: "A dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Opens a Path to Tectonic Changes in US Law"
 image: /img/podcast/cover-art2.png
-duration: "35:49"
+duration: "55:56"
 publishDate: 2025-11-18
 videoId: 2qU9L_ecEZY
 tags: 

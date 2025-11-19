@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
-import { gzipSync, brotliCompressSync } from 'zlib';
+import { gzipSync, brotliCompressSync, constants as zlibConstants } from 'zlib';
 
 const siteDir = '_site';
 
@@ -32,7 +32,7 @@ function compressFile(filePath) {
   // Brotli compression
   const brotlied = brotliCompressSync(content, {
     params: {
-      [require('zlib').constants.BROTLI_PARAM_QUALITY]: 11
+      [zlibConstants.BROTLI_PARAM_QUALITY]: 11
     }
   });
   writeFileSync(`${filePath}.br`, brotlied);

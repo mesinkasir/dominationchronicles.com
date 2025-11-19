@@ -1,20 +1,20 @@
 <title>{{title or metadata.title}}</title>
-<meta content="{{title or metadata.title}}" property="og:title" />
-<meta content="{{title or metadata.title}}" property="dc:title" />
-<meta content="{{title or metadata.title}}" name="twitter:title" />
-<meta content="{{title or metadata.title}}" name="title" />
-<meta content="{{title or metadata.title}}" property="og:site_name" />
-<meta content="{{description or metadata.description}}" name="description" />
+<meta content="{{(title or metadata.title) | escape}}" property="og:title" />
+<meta content="{{(title or metadata.title) | escape}}" property="dc:title" />
+<meta content="{{(title or metadata.title) | escape}}" name="twitter:title" />
+<meta content="{{(title or metadata.title) | escape}}" name="title" />
+<meta content="{{(title or metadata.title) | escape}}" property="og:site_name" />
+<meta content="{{(description or metadata.description) | escape}}" name="description" />
 <meta
-	content="{{description or metadata.description}}"
+	content="{{(description or metadata.description) | escape}}"
 	property="facebook:description"
 />
 <meta
-	content="{{description or metadata.description}}"
+	content="{{(description or metadata.description) | escape}}"
 	property="og:description"
 />
 <meta
-	content="{{description or metadata.description}}"
+	content="{{(description or metadata.description) | escape}}"
 	name="twitter:description"
 />
 <meta property="twitter:card" content="summary_large_image" />

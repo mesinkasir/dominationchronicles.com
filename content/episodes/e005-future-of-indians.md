@@ -1,5 +1,5 @@
 ---
-title: 'Does the Future of Indians Include Eminent Domain?'
+title: "Does the Future of Indians Include Eminent Domain?"
 description: "The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment."
 image: /img/podcast/cover-art2.png
 duration: "35:49"

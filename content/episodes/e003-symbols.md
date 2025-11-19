@@ -1,5 +1,5 @@
 ---
-title: 'Symbols, Enigmas, Curiosity'
+title: "Symbols, Enigmas, Curiosity"
 description: "We explore symbols — statues, seals, emblems, etc. — in the process of reality creation — especially a domination reality."
 image: /img/podcast/cover-art2.png
 duration: "58:11"

@@ -10,4 +10,4 @@ button2:
   text: Youtube
   url: https://www.youtube.com/@DominationChronicles
 ---
-*Because domination isn’t a metaphor—it’s a system.* 
+A podcast by Steven T. Newcomb (Shawnee/Lenape) and Peter d'Errico.

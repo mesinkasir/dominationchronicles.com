@@ -10,8 +10,8 @@ url: "https://dominationchronicles.com"
 #url: "http://localhost:8080"
 
 # Podcast RSS
-podcast_rss: 
-  url: https://feeds.bbci.co.uk/news/world/rss.xml
+#podcast_rss: 
+  #url: https://feeds.bbci.co.uk/news/world/rss.xml
 
 
 # Metadata Social

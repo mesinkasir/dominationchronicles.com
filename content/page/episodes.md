@@ -20,7 +20,7 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
                     <div class="card bg-dark-secondary h-100 border-0 shadow-sm">
                         {% if e.data.image %}<img src="{{e.data.image}}" data-src="{{e.data.image}}" 
                         class="card-img-top lazy-load-image"
-                        width="100%" height="100%" alt="{{e.data.title}}" loading="lazy"/>{% endif %}
+                        width="100%" height="100%" alt="{{ e.data.title | escape }}" loading="lazy"/>{% endif %}
                         <div class="card-body d-flex flex-column">
                             <h3 class="card-title text-white">{{e.data.title}}</h3>
                             <p class="card-text text-secondary small">Duration: {{e.data.duration}}</p>
@@ -39,11 +39,11 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
                         <img class="card-img-top lazy-load-image"
                              src="https://placehold.co/400x400/2c2c2e/f5f5f7?text=Loading"
                              data-src="{{ episode.image }}" 
-                             alt="Cover Episode: {{ episode.title }}"
+                             alt="Cover Episode: {{ episode.title | escape }}"
                              loading="lazy"
                         ></a>
                         <div class="card-body text-white">
-                            <h2 class="h5 mt-2 mb-2 text=-white">{{ episode.title }}</h2>
+                            <h2 class="h5 mt-2 mb-2 text-white">{{ episode.title }}</h2>
                             <p class="card-text small text-secondary">
                                {{ episode.publishDate }} &vert; {{ episode.description | striptags | truncate(150) }}
                             </p>
@@ -51,7 +51,6 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
                                 {{widget.episode.button_episodes}}<i class="fas fa-circle-play ms-2"></i>
                             </a>
                         </div>
-                    </a>
                 </div>
             </div>
         {% endfor %}
