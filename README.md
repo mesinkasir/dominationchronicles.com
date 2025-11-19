@@ -1,7 +1,8 @@
 # dominationchronicles.com
 [![Deploy Eleventy to XMIT](https://github.com/adamdjbrett/dominationchronicles.com/actions/workflows/xmit-deploy.yml/badge.svg)](https://github.com/adamdjbrett/dominationchronicles.com/actions/workflows/xmit-deploy.yml)
 
-![xmit logo](/xmit.co.png)
+![xmit logo](/xmit.co.png)  
+  
 Hosted on [xmit.co](https://xmit.co)
 
 A podcast website with 11ty developed by [Adam DJ Brett](https://github.com/adamdjbrett)
