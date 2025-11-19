@@ -17,12 +17,15 @@ host:
          Peter d’Errico graduated from Yale Law School in 1968. He was an attorney at Dinébe’iiná Náhiiłna be Agha’diit’ahii, Navajo Legal Services, in Shiprock, 1968-1970.
       image: "/img/peter-derrico.webp"
       social: 
-        - title: Peter facebook
-          icon: fab fa-facebook
-          url: https://facebook.com
-        - title: Peter X
-          icon: fab fa-x-twitter
-          url: https://x.com/dominationchron
+        - title: Peter on substack
+          icon: fas fa-rss
+          url: https://peterderrico.substack.com/
+        - title: Peter on Research Gate
+          icon: fab fa-researchgate
+          url: https://www.researchgate.net/profile/Peter-D-Errico
+        - title: Peter on Academia.edu
+          icon: fas fa-bookmark
+          url: https://umass.academia.edu/PeterdErrico
     - name: "Steven T. Newcomb"
       about: "About Steven T. Newcomb"
       page: "/host/steven-t-newcomb"
