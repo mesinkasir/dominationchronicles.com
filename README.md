@@ -1,7 +1,7 @@
 # dominationchronicles.com
 [![Deploy Eleventy to XMIT](https://github.com/adamdjbrett/dominationchronicles.com/actions/workflows/xmit-deploy.yml/badge.svg)](https://github.com/adamdjbrett/dominationchronicles.com/actions/workflows/xmit-deploy.yml)
 
-![xmit logo](/xmit.co.png)  
+[![xmit logo](/xmit.co.png)](https://xmit.co)
   
 Hosted on [xmit.co](https://xmit.co)
 
