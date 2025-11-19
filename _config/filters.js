@@ -35,4 +35,24 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("sortAlphabetically", strings =>
 		(strings || []).sort((b, a) => b.localeCompare(a))
 	);
+
+	// Sort Eleventy collection items by data.publishDate (desc), fallback to item.date
+	eleventyConfig.addNunjucksFilter("sortEpisodesByPublishDate", (arr) => {
+		if(!Array.isArray(arr)) return arr;
+		return arr.slice().sort((a, b) => {
+			const ad = a?.data?.publishDate ? new Date(a.data.publishDate) : (a.date ? new Date(a.date) : new Date(0));
+			const bd = b?.data?.publishDate ? new Date(b.data.publishDate) : (b.date ? new Date(b.date) : new Date(0));
+			return bd - ad;
+		});
+	});
+
+	// Sort plain objects (e.g., podcast items) by publishDate (desc)
+	eleventyConfig.addNunjucksFilter("sortPodcastByPublishDate", (arr) => {
+		if(!Array.isArray(arr)) return arr;
+		return arr.slice().sort((a, b) => {
+			const ad = a?.publishDate ? new Date(a.publishDate) : new Date(0);
+			const bd = b?.publishDate ? new Date(b.publishDate) : new Date(0);
+			return bd - ad;
+		});
+	});
 };

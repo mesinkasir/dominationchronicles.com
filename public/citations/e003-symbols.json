@@ -1,0 +1,24 @@
+[
+  {
+    "id": "e003-symbols",
+    "type": "broadcast",
+    "title": "Symbols, Enigmas, Curiosity",
+    "container-title": "The Domination Chronicles Podcast",
+    "author": [
+      {
+        "family": "Newcomb",
+        "given": "Steven T."
+      },
+      {
+        "family": "d'Errico",
+        "given": "Peter"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [2025, 10, 12]
+      ]
+    },
+    "URL": "https://dominationchronicles.com/episodes/symbols-enigmas-curiosity/"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "e002-say-something",
+    "type": "broadcast",
+    "title": "\"Say Something, See Something\"",
+    "container-title": "The Domination Chronicles Podcast",
+    "author": [
+      {
+        "family": "Newcomb",
+        "given": "Steven T."
+      },
+      {
+        "family": "d'Errico",
+        "given": "Peter"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [2025, 10, 9]
+      ]
+    },
+    "URL": "https://dominationchronicles.com/episodes/say-something-see-something/"
+  }
+]

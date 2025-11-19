@@ -1,0 +1,24 @@
+[
+  {
+    "id": "e001-opening",
+    "type": "broadcast",
+    "title": "Our Opening Conversation",
+    "container-title": "The Domination Chronicles Podcast",
+    "author": [
+      {
+        "family": "Newcomb",
+        "given": "Steven T."
+      },
+      {
+        "family": "d'Errico",
+        "given": "Peter"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [2025, 10, 8]
+      ]
+    },
+    "URL": "https://dominationchronicles.com/episodes/our-opening-conversation/"
+  }
+]

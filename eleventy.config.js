@@ -30,7 +30,10 @@ eleventyConfig.addPlugin(eleventyPluginYoutubeEmbed);
 		.addPassthroughCopy({
 			"./public/": "/",
 		})
-		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl")
+		.addPassthroughCopy("./public/img/favicons")
+		.addPassthroughCopy("./public/pdfs")
+		.addPassthroughCopy("./public/citations");
 eleventyConfig.setNunjucksEnvironmentOptions({
         trimBlocks: true,
         lstripBlocks: true,
@@ -84,7 +87,7 @@ eleventyConfig.setNunjucksEnvironmentOptions({
 			encoding: "utf-8",
 		});
 	});
-	eleventyConfig.addPlugin(feedPlugin, {
+    eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom",
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
@@ -95,18 +98,17 @@ eleventyConfig.setNunjucksEnvironmentOptions({
 			},
 		},
 		collection: {
-			name: "all",
-			limit: 20,
+			// Only include podcast episodes tagged with "episodes"
+			name: "episodes",
+			limit: 50,
 		},
 		metadata: {
 			language: "en",
-			title:
-				"Editorial",
-			subtitle:
-				"Editorial 11ty.",
-			base: "https://www.example.com/",
+			title: "Domination Chronicles Podcast",
+			subtitle: "Because domination isn’t a metaphor—it’s a system.",
+			base: "https://dominationchronicles.com/",
 			author: {
-				name: "adamdjbrett",
+				name: "Domination Chronicles",
 			},
 		},
 	});
