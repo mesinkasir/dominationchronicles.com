@@ -22,7 +22,7 @@ host:
           url: https://facebook.com
         - title: Peter X
           icon: fab fa-x-twitter
-          url: https://x.com
+          url: https://x.com/dominationchron
     - name: "Steven T. Newcomb"
       about: "About Steven T. Newcomb"
       page: "/host/steven-t-newcomb"
@@ -35,7 +35,7 @@ host:
           url: https://facebook.com/stevennewcomb
         - title: Steven on X
           icon: fab fa-x-twitter
-          url: https://x.com/originally_free
+          url: https://x.com/dominationchron
         - title: Steven on Vimeo
           icon: fab fa-vimeo
           url: https://vimeo.com/ondemand/dominationcode
