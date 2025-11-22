@@ -1,10 +1,4 @@
 [[redirects]]
-from = "/youtube/"
-to = "https://www.youtube.com/@DominationChronicles"
-permanent = true
-
-
-[[redirects]]
-from = "^/new/(.*)"
+from = "^/youtube/?$"
 to = "https://www.youtube.com/@DominationChronicles"
 permanent = true
