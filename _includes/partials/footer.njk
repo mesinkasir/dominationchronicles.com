@@ -27,11 +27,14 @@
                 </div>
                 <div class="col-md-2 p-3">
                     <h3 class="text-uppercase mb-3 small">{{footer.menu3.title}}</h3>
-                    <div class="d-flex">
-                        {% for k in footer.menu3.list %}<a href="{{k.url}}" title="{{k.title}}" 
-                        class="btn btn-outline-secondary btn-social me-2"
-                        target="_blank" rel="me noopener noreferrer"
-                        ><i class="{{k.icon}}"></i></a>{% endfor %}
+                    <div class="footer-social-grid">
+                        {% for k in footer.menu3.list %}
+                        <a href="{{k.url}}" title="{{k.title}}" class="btn btn-outline-secondary btn-social"
+                           target="_blank" rel="me noopener noreferrer">
+                            <i class="{{k.icon}}"></i>
+                            <span class="visually-hidden">{{k.title}}</span>
+                        </a>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

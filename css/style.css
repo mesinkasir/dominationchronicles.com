@@ -279,3 +279,30 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400;
 }
+
+/* ------------------------------------------
+ * Footer Social Icons Grid (two rows)
+ * ------------------------------------------ */
+.footer-social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem 0.75rem;
+}
+@media (max-width: 480px) {
+    .footer-social-grid {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 0.5rem;
+    }
+}
+.footer-social-grid .btn-social {
+    padding: 0.4rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    min-width: 42px;
+    max-width: 100%;
+}
+.footer-social-grid .btn-social i {
+    font-size: 1.1rem;
+}
