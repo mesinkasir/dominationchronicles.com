@@ -1,7 +1,7 @@
 ---
 title: About Me
 description: About Domination Chronicles
-image: /img/banner-full.jpg
+image: /img/banner.webp
 permalink: /about/
 ---
 [**Domination Chronicles**](/) is a podcast where [Steven T. Newcomb](/host/steven-t-newcomb/) (Shawnee/Lenape) and [Peter d’Errico](/host/peter-derrico/) examine how domination shaped the legal and political foundations of the United States. They draw on decades of research into the Doctrine of Christian Discovery, federal Indian law, and the long arc of resistance by Indigenous nations. Each episode uses concrete cases, plain language, and close reading to show how old claims to a “right of domination” still shape life today.
