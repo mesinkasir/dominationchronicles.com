@@ -10,8 +10,8 @@ url: "https://dominationchronicles.com"
 #url: "http://localhost:8080"
 
 # Podcast RSS
-#podcast_rss: 
-  #url: https://feeds.bbci.co.uk/news/world/rss.xml
+podcast_rss: 
+  url: https://feeds.redcircle.com/2caa5839-9deb-419c-9347-2458812d9406?_gl=1*1pidu1i*_gcl_au*MjE3NzY3NjAxLjE3NjAwNDA1MzcuMjU3OTkxMTQzLjE3NjM5MTYwOTkuMTc2MzkxNjIwMg..*_ga*MTc2Njg3ODIyMS4xNzYwMDQwNTM3*_ga_KVZ47LYJWW*czE3NjM5MTYwNjIkbzMkZzEkdDE3NjM5MTkxNTIkajQ5JGwwJGgw
 
 
 # Metadata Social
