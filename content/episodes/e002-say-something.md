@@ -1,5 +1,5 @@
 ---
-title: "Say Something, See Something"
+title: "E002: Say Something, See Something"
 description: "Steve Newcomb and Peter d’Errico dig into Halverson v. Burgum, the August 21, 2025, Ninth Circuit dismissal of Jack Halverson’s (Crow Nation) case against the Bureau of Indian Affairs."
 image: /img/podcast/cover-art2.webp
 duration: "1:04:32"
@@ -40,7 +40,7 @@ As the Halverson case illustrates, the Johnson decision is still the basis of US
 
 ## Citation
 
-Newcomb, Steven T., and Peter d'Errico, cohosts. "'Say Something, See Something'." *The Domination Chronicles Podcast*, October 9, 2025. https://dominationchronicles.com/episodes/say-something-see-something/.
+Newcomb, Steven T., and Peter d'Errico, cohosts. "'Say Something, See Something'." *The Domination Chronicles Podcast*, October 9, 2025. https://dominationchronicles.com/episodes/e002-say-something/.
 
 - [Download RIS Citation](/citations/e002-say-something.ris)
 - [Download CSL JSON Citation](/citations/e002-say-something.json)

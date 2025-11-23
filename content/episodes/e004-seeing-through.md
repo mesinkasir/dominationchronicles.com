@@ -1,5 +1,5 @@
 ---
-title: "Seeing Through To The Emperor's Extravagant Pretension"
+title: "E004: Seeing Through To The Emperor's Extravagant Pretension"
 description: "A concurring opinion in FLYING T RANCH v. STILLAGUAMISH TRIBE, October 9, 2025, from the Supreme Court of the State of Washington criticized the 'racism' of foundational cases in 'federal Indian law'. "
 image: /img/podcast/cover-art2.webp
 duration: "54:15"
@@ -25,7 +25,7 @@ We show that the rhetoric of domination is not the same as the domination decisi
 
 ## Citation
 
-Newcomb, Steven T., and Peter d'Errico, cohosts. "Seeing Through To The Emperor's Extravagant Pretension." *The Domination Chronicles Podcast*, October 13, 2025. https://dominationchronicles.com/episodes/seeing-through-to-the-emperors-extravagant-pretension/.
+Newcomb, Steven T., and Peter d'Errico, cohosts. "Seeing Through To The Emperor's Extravagant Pretension." *The Domination Chronicles Podcast*, October 13, 2025. https://dominationchronicles.com/episodes/e004-seeing-through/.
 
 - [Download RIS Citation](/citations/e004-seeing-through.ris)
 - [Download CSL JSON Citation](/citations/e004-seeing-through.json)

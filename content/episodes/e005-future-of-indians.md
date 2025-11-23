@@ -1,6 +1,5 @@
 ---
-title: "Does the Future of Indians Include Eminent Domain?"
-description: "The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment."
+description: "E005: The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment."
 image: /img/podcast/cover-art2.webp
 duration: "35:49"
 publishDate: 2025-11-12
@@ -27,7 +26,7 @@ Does it mean that the “boarding schools” were successful? That Henry Pratt s
 
 ## Citation
 
-Newcomb, Steven T., and Peter d'Errico, cohosts. "Does the Future of Indians Include Eminent Domain?" *The Domination Chronicles Podcast*, November 12, 2025. https://dominationchronicles.com/episodes/does-the-future-of-indians-include-eminent-domain/.
+Newcomb, Steven T., and Peter d'Errico, cohosts. "Does the Future of Indians Include Eminent Domain?" *The Domination Chronicles Podcast*, November 12, 2025. https://dominationchronicles.com/episodes/e005-future-of-indians/.
 
 - [Download RIS Citation](/citations/e005-future-of-indians.ris)
 - [Download CSL JSON Citation](/citations/e005-future-of-indians.json)

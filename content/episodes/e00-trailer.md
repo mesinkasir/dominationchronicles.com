@@ -1,0 +1,40 @@
+---
+title: "E000: Trailer"
+description: "In this inaugural episode of *Domination Chronicles*, Steven Newcomb (Shawnee/Lenape) and Peter d'Errico deepen a decades-long dialogue on how systems of domination have shaped U.S. federal Indian law, beginning with the 1823 Johnson v. *McIntosh* decision and its roots in 15th-century the Doctrine of Christian Discovery."
+image: /img/podcast/cover-art2.webp
+duration: "2:09"
+publishDate: 2025-11-23
+tags: 
+ - e001
+ - introduction
+ - law
+ - discovery
+---
+<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/48b30034-1471-408f-9f5c-b0b91541f124"></script>
+    <div class="redcirclePlayer-48b30034-1471-408f-9f5c-b0b91541f124"></div>
+    <style>
+    .redcircle-link:link {
+        color: #ea404d;
+        text-decoration: none;
+    }
+    .redcircle-link:hover {
+        color: #ea404d;
+    }
+    .redcircle-link:active {
+        color: #ea404d;
+    }
+    .redcircle-link:visited {
+        color: #ea404d;
+    }
+</style>
+<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="https://redcircle.com?utm_source=rc_embedded_player&utm_medium=web&utm_campaign=embedded_v1">RedCircle</a></p>
+
+## Description
+
+This trailer introduces [The Domination Chronicles](https://dominationchronicles.com/), a podcast that examines how domination became a guiding force in Western law, religion, and politics—and how those ideas continue to shape life for Indigenous Peoples today. Steven T. Newcomb and Peter d’Errico draw on years of shared work to explain the origins of the “right of domination,” the lasting impact of the Doctrine of Discovery, and the language that hides these systems in plain sight.
+
+The trailer sets the tone for the series: clear teaching, steady critique, and a focus on Indigenous knowledge. It invites listeners to follow a conversation that helps make sense of the past and understand what change requires now.
+
+
+## Transcript
+[PDF Download](/pdfs/e00-trailer.pdf)

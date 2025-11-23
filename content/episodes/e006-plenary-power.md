@@ -1,5 +1,5 @@
 ---
-title: "Supreme Court Justices Attack 'plenary power' over Native Peoples"
+title: "E006: Supreme Court Justices Attack 'plenary power' over Native Peoples"
 description: "A dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Opens a Path to Tectonic Changes in US Law"
 image: /img/podcast/cover-art2.webp
 duration: "55:56"
@@ -33,7 +33,7 @@ Newcomb and d'Errico also note the silence of the federal Indian law establishme
 
 ## Citation
 
-Newcomb, Steven T., and Peter d'Errico, cohosts. "Supreme Court Justices Attack 'plenary power' over Native Peoples." *The Domination Chronicles Podcast*, November 18, 2025. https://dominationchronicles.com/episodes/supreme-court-justices-attack-plenary-power-over-native-peoples/.
+Newcomb, Steven T., and Peter d'Errico, cohosts. "Supreme Court Justices Attack 'plenary power' over Native Peoples." *The Domination Chronicles Podcast*, November 18, 2025. https://dominationchronicles.com/episodes/e006-plenary-power/.
 
 - [Download RIS Citation](/citations/e006-plendary-power.ris)
 - [Download CSL JSON Citation](/citations/e006-plendary-power.json)
