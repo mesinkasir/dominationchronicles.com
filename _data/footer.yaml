@@ -1,68 +1,77 @@
-# Footer area 1
+#############################################
+# Footer Configuration
+#############################################
 title: "Domination Chronicles"
 image: "/img/icon.svg"
 text: |
-   *Because domination isn’t a metaphor—it’s a system*
-# Footer area 2 Menu 1
-menu1: 
- title: Menu
- list: 
-   - title: "Home"
-     url: "/"
-   - title: "About"
-     url: "/about/"
-   - title: "Contact"
-     url: "/contact/"
-   - title: "RSS Feed"
-     url: "/feed/feed.xml"  
+  *Because domination isn’t a metaphor—it’s a system*
 
-# Footer area 3 Menu 2
-menu2: 
- title: Subscribe
- list: 
-   - title: "Youtube"
-     icon: "fab fa-youtube"
-     url: "https://www.youtube.com/@DominationChronicles"
-   - title: "Spotify"
-     icon: "fab fa-spotify"
-     url: "https://www.youtube.com/@DominationChronicles"
-   - title: "Apple"
-     icon: "fab fa-apple"
-     url: "https://www.youtube.com/@DominationChronicles"
-   - title: "Google"
-     icon: "fab fa-google"
-     url: "https://www.youtube.com/@DominationChronicles"
-   - title: "Redcircle"
-     icon: "fas fa-podcast"
-     url: "https://redcircle.com/dominationchronicles  
+#############################################
+# Menu 1
+#############################################
+menu1:
+  title: Menu
+  list:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+    - title: "Contact"
+      url: "/contact/"
+    - title: "RSS Feed"
+      url: "/feed/feed.xml"
 
-# Footer area 4 Menu 3
-menu3: 
- title: social
- list: 
-   - title: "Youtube Chanel"
-     icon: "fab fa-youtube"
-     url: "https://www.youtube.com/@DominationChronicles"
-   - title: "Bluesky"
-     icon: "fab fa-bluesky"
-     url: "https://bsky.app/profile/dominationchron.bsky.social"
-   - title: "Mastodon"
-     icon: "fab fa-mastodon"
-     url: "https://mastodon.social/@DominationChronicles"
-   - title: "X"
-     icon: "fab fa-x-twitter"
-     url: "https://x.com/dominationchron"
-   - title: "Facebook"
-     icon: "fab fa-facebook"
-     url: "https://www.facebook.com/dominationchronicles/"
-   - title: "Instagram"
-     icon: "fab fa-instagram"
-     url: "https://www.instagram.com/dominationchronicles/"
-   - title: "Watch our Films"
-     icon: "fab fa-vimeo"
-     url: "https://vimeo.com/ondemand/dominationcode"
-   - title: "Redcircle"
-     icon: "fas fa-podcast"
-     url: "https://redcircle.com/dominationchronicles    
+#############################################
+# Menu 2 (Subscribe)
+#############################################
+menu2:
+  title: Subscribe
+  list:
+    - title: "Youtube"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/@DominationChronicles"
+    - title: "Spotify"
+      icon: "fab fa-spotify"
+      url: "https://www.youtube.com/@DominationChronicles"
+    - title: "Apple"
+      icon: "fab fa-apple"
+      url: "https://www.youtube.com/@DominationChronicles"
+    - title: "Google"
+      icon: "fab fa-google"
+      url: "https://www.youtube.com/@DominationChronicles"
+    - title: "Redcircle"
+      icon: "fas fa-podcast"
+      url: "https://redcircle.com/dominationchronicles"
 
-copyrights: " Domination Chronicles"
+#############################################
+# Menu 3 (Social)
+#############################################
+menu3:
+  title: Social
+  list:
+    - title: "Youtube Channel"
+      icon: "fab fa-youtube"
+      url: "https://www.youtube.com/@DominationChronicles"
+    - title: "Bluesky"
+      icon: "fab fa-bluesky"
+      url: "https://bsky.app/profile/dominationchron.bsky.social"
+    - title: "Mastodon"
+      icon: "fab fa-mastodon"
+      url: "https://mastodon.social/@DominationChronicles"
+    - title: "X"
+      icon: "fab fa-x-twitter"
+      url: "https://x.com/dominationchron"
+    - title: "Facebook"
+      icon: "fab fa-facebook"
+      url: "https://www.facebook.com/dominationchronicles/"
+    - title: "Instagram"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/dominationchronicles/"
+    - title: "Watch our Films"
+      icon: "fab fa-vimeo"
+      url: "https://vimeo.com/ondemand/dominationcode"
+    - title: "Redcircle"
+      icon: "fas fa-podcast"
+      url: "https://redcircle.com/dominationchronicles"
+
+copyrights: "Domination Chronicles"
