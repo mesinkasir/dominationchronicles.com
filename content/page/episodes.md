@@ -30,7 +30,7 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
                         </div>
                     </div>
                 </div>{% endfor %}
-    {% if podcast.length > 0 %}
+<!--     {% if podcast.length > 0 %}
         {% set sortedPodcast = podcast | sortPodcastByPublishDate %}
         {% for episode in sortedPodcast %}
             <div class="col-md-6 col-lg-4 d-flex">
@@ -58,6 +58,6 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
         <div class="col-12 text-center">
             <p class="text-secondary">Not Found Podcast.</p>
         </div>
-    {% endif %}
+    {% endif %} -->
 </section>
 </div>
