@@ -1,5 +1,5 @@
 ---
-description: "E005: The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment."
+description: "E005: The Future of Indians"
 image: /img/podcast/cover-art2.webp
 duration: "35:49"
 publishDate: 2025-11-12
