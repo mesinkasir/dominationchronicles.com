@@ -6,81 +6,112 @@ import yaml from 'js-yaml';
 
 const METADATA_PATH = path.join(process.cwd(), '_data', 'metadata.yaml');
 
+// Tentukan Show Slug secara eksplisit karena URL RSS menggunakan GUID
+// Show Slug ini berasal dari https://redcircle.com/shows/dominationchronicles
+const REDCIRCLE_SHOW_SLUG = 'dominationchronicles';
+
+
 export default async function() {
-    let metadata = {};
-    try {
-        const metadataContent = await fs.readFile(METADATA_PATH, 'utf8');
-        metadata = yaml.load(metadataContent);
-    } catch (error) {
-        console.error("❌ ERROR: can't read metadata.yaml.");
-        return [];
-    }
+	let metadata = {};
+	try {
+		const metadataContent = await fs.readFile(METADATA_PATH, 'utf8');
+		metadata = yaml.load(metadataContent);
+	} catch (error) {
+		console.error("❌ ERROR: can't read metadata.yaml.");
+		return [];
+	}
 
-    const REDCIRCLE_RSS_URL = metadata.podcast_rss?.url; 
+	const REDCIRCLE_RSS_URL = metadata.podcast_rss?.url;	
+	
+	if (!REDCIRCLE_RSS_URL) {
+		console.error("❌ ERROR: URL RSS not found on metadata.yaml.");
+		return [];
+	}
+
+    // Gunakan Slug yang telah didefinisikan secara eksplisit
+    const redcircleShowSlug = REDCIRCLE_SHOW_SLUG;
     
-    if (!REDCIRCLE_RSS_URL) {
-        console.error("❌ ERROR: URL RSS not found on metadata.yaml.");
-        return [];
-    }
+	try {
+		const parser = new Parser({
+			customFields: {
+				item: [
+					['itunes:image', 'episodeImage', {keepArray: true}],
+                    ['itunes:permalink', 'permalinkUrl'], 
+                    ['itunes:episodeUrl', 'episodePageUrl'], 
+                    ['content:encoded', 'episodeContent']
+				]
+			}
+		});
 
-    try {
-        const parser = new Parser({
-            customFields: {
-                item: [
-                    ['itunes:image', 'episodeImage', {keepArray: true}],
-                ]
+		const feedResponse = await fetch(REDCIRCLE_RSS_URL);	
+
+		if (!feedResponse.ok) {
+			throw new Error(`Gagal mengambil feed. HTTP Status: ${feedResponse.status}`);
+		}
+
+		const feedText = await feedResponse.text();
+		const feed = await parser.parseString(feedText);
+
+	// Build initial episode objects
+	const episodes = feed.items.map(item => {
+			let episodeImageUrl = 'placeholder.png';
+			if (item.episodeImage && item.episodeImage.length > 0) {
+				episodeImageUrl = item.episodeImage[0].href || item.episodeImage[0].url || 'placeholder.png';
+			}
+			if (episodeImageUrl === 'placeholder.png' && feed.image && feed.image.url) {
+				episodeImageUrl = feed.image.url;
+			}
+
+			// Base slug from title (fallback to link if missing)
+			const slugSource = item.title || item.link || '';
+			const baseSlug = slugSource.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-*|-*$/g, '');
+
+            let externalLink = null;
+            
+            // Logika prioritas untuk mencari link terbaik
+            if (item.episodePageUrl) { externalLink = item.episodePageUrl; } 
+            else if (item.permalinkUrl) { externalLink = item.permalinkUrl; } 
+            else if (item.enclosure && item.enclosure.url) { externalLink = item.enclosure.url; } 
+            else if (item.guid && (item.guid.startsWith('http') || item.guid.startsWith('https'))) { externalLink = item.guid; } 
+            else if (item.content || item.episodeContent) {
+                const contentToCheck = item.episodeContent || item.content;
+                const urlMatch = contentToCheck.match(/https?:\/\/[^\s"]+/); 
+                if (urlMatch && urlMatch[0]) { externalLink = urlMatch[0]; }
             }
-        });
+            if (!externalLink) { externalLink = item.link; }
 
-        const feedResponse = await fetch(REDCIRCLE_RSS_URL); 
+			return {
+				title: item.title,
+				originalUrl: item.link,
+				image: episodeImageUrl,
+				publishDate: item.publishDate,
+				slug: baseSlug,
+				guid: item.guid || item.id || item.link, 
+				// Menghapus 'finalLink' di sini untuk menghindari kebingungan
+			};
+		});
 
-        if (!feedResponse.ok) {
-            throw new Error(`Gagal mengambil feed. HTTP Status: ${feedResponse.status}`);
-        }
-
-        const feedText = await feedResponse.text();
-        const feed = await parser.parseString(feedText);
-
-    // Build initial episode objects
-    const episodes = feed.items.map(item => {
-            let episodeImageUrl = 'placeholder.png';
-            if (item.episodeImage && item.episodeImage.length > 0) {
-                episodeImageUrl = item.episodeImage[0].href || item.episodeImage[0].url || 'placeholder.png';
+		// Ensure slug uniqueness and construct RedCircle Page URL
+	    const slugSeen = {};
+		for (const ep of episodes) {
+			slugSeen[ep.slug] = (slugSeen[ep.slug] || 0) + 1;
+			const occurrence = slugSeen[ep.slug];
+			ep.uniqueSlug = occurrence === 1 ? ep.slug : `${ep.slug}-${occurrence}`;
+			ep.url = `/episodes/${ep.uniqueSlug}/`; 
+			
+            // KONSTRUKSI URL HALAMAN REDCIRCLE MENGGUNAKAN SLUG YANG KITA DEFENISIKAN
+            if (redcircleShowSlug) {
+                // Set properti baru: 'redcircleLink'
+                const constructedUrl = `https://redcircle.com/shows/${redcircleShowSlug}/episodes/${ep.uniqueSlug}`;
+                ep.redcircleLink = constructedUrl; // <-- Properti Baru
             }
-            if (episodeImageUrl === 'placeholder.png' && feed.image && feed.image.url) {
-                episodeImageUrl = feed.image.url;
-            }
+		}
 
-            // Base slug from title (fallback to link if missing)
-            const slugSource = item.title || item.link || '';
-            const baseSlug = slugSource.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-*|-*$/g, '');
+		console.log(`✅ SUCCESS: Load ${episodes.length} episode from RedCircle. as 'podcast'.`);
+		return episodes;
 
-            return {
-                title: item.title,
-                originalUrl: item.link,
-                image: episodeImageUrl,
-                publishDate: item.publishDate,
-                slug: baseSlug,
-                guid: item.guid || item.id || item.link // keep potential unique identifiers
-            };
-        });
-
-        // Ensure slug uniqueness by appending an incrementing occurrence counter for duplicates.
-    // De-duplicate slugs by appending an occurrence counter (>1) to subsequent duplicates.
-    // Example: "epstein-files" => first occurrence "epstein-files", second "epstein-files-2", etc.
-    const slugSeen = {};
-        for (const ep of episodes) {
-            slugSeen[ep.slug] = (slugSeen[ep.slug] || 0) + 1;
-            const occurrence = slugSeen[ep.slug];
-            ep.uniqueSlug = occurrence === 1 ? ep.slug : `${ep.slug}-${occurrence}`;
-            ep.url = `/episodes/${ep.uniqueSlug}/`;
-        }
-
-        console.log(`✅ SUCCESS: Load ${episodes.length} episode from RedCircle. as 'podcast'.`);
-        return episodes;
-
-    } catch (error) {
-        console.error("❌ FATAL ERROR: Parsing/Fetch RSS RedCircle failed:", error.message);
-        return [];
-    }
+	} catch (error) {
+		console.error("❌ FATAL ERROR: Parsing/Fetch RSS RedCircle failed:", error.message);
+		return [];
+	}
 }

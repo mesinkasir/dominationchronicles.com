@@ -1,11 +1,16 @@
 ---
-layout: episodes-list.njk 
+layout: base.njk 
 title: Episodes
 description: Domination Chronicles Podcast Episodes
 pagination:
   data: collections.episodes
-  size: 1
+  size: 4
   reverse: true
+testdata:
+  - item1
+  - item2
+  - item3
+  - item4
 permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1
   }}/{% endif %}index.html
 ---
@@ -15,8 +20,8 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
 <p class="lead text-secondary">{{description}}</p>
 </header>
 <section id="episode-list" class="row g-4">
-    {% set sortedEpisodes = collections.episodes | reverse %}
-    {% for e in sortedEpisodes %}<div class="col-lg-4 col-md-6 p-1">
+    
+    {% for e in pagination.items | reverse %}<div class="col-lg-4 col-md-6 p-1">
                     <div class="card bg-dark-secondary h-100 border-0 shadow-sm">
                         {% if e.data.image %}<img src="{{e.data.image}}" data-src="{{e.data.image}}" 
                         class="card-img-top lazy-load-image"
@@ -30,34 +35,15 @@ permalink: /episodes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber 
                         </div>
                     </div>
                 </div>{% endfor %}
-    {% if podcast.length > 0 %}
-        {% set sortedPodcast = podcast | sortPodcastByPublishDate %}
-        {% for episode in sortedPodcast %}
-            <div class="col-md-6 col-lg-4 d-flex">
-                <div class="card bg-dark-secondary h-100 w-100 border-0 shadow-lg transition-transform hover:scale-105">
-                    <a href="/episodes/{{ episode.title | slugify | lower }}/" class="text-decoration-none text-white">
-                        <img class="card-img-top lazy-load-image"
-                             src="https://placehold.co/400x400/2c2c2e/f5f5f7?text=Loading"
-                             data-src="{{ episode.image }}" 
-                             alt="Cover Episode: {{ episode.title | escape }}"
-                             loading="lazy"
-                        ></a>
-                        <div class="card-body text-white">
-                            <h2 class="h5 mt-2 mb-2 text-white">{{ episode.title }}</h2>
-                            <p class="card-text small text-secondary">
-                               {{ episode.publishDate }} &vert; {{ episode.description | striptags | truncate(150) }}
-                            </p>
-                              <a href="/episodes/{{ episode.title | slugify | lower }}/" class="btn btn-outline-primary mt-auto stretched-link col-12">
-                                {{widget.episode.button_episodes}}<i class="fas fa-circle-play ms-2"></i>
-                            </a>
-                        </div>
-                </div>
-            </div>
-        {% endfor %}
-    {% else %}
-        <div class="col-12 text-center">
-            <p class="text-secondary">Not Found Podcast.</p>
-        </div>
-    {% endif %}
+
+<div class="row col-md-12 mt-5">
+<div class="col-md-6 p-3">
+{% if pagination.href.previous %}<a class="btn btn-lg btn-primary text-white col-6" href="{{ pagination.href.previous }}">Prev </a>{% endif %}
+</div>
+<div class="col-md-6 text-end p-3">
+{% if pagination.href.next %}<a class="btn btn-lg btn-primary text-white col-6" href="{{ pagination.href.next }}">Next </a>{% endif %}
+</div>
+</div>
+
 </section>
 </div>
