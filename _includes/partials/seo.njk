@@ -17,7 +17,7 @@
 <meta property="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ (title or metadata.title) | escape }}" />
 <meta name="twitter:description" content="{{ (description or metadata.description) | escape }}" />
-<meta name="twitter:image" content="{{metadata.url}}{{ metadata.opengraph or metadata.image or image }}" />
+<meta name="twitter:image" content="{{ metadata.url }}{{ metadata.opengraph or metadata.image or image }}" />
 <meta property="twitter:author" content="{{ metadata.metasocial.twitteruser }}" />
 <meta name="twitter:site" content="{{ metadata.metasocial.twitter }}" />
 
