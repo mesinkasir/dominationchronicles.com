@@ -5,17 +5,17 @@ image: /img/podcast/cover-art2.webp
 duration: "35:48"
 publishDate: 2025-11-22
 # Use Video id just copy link url ID not embed ID
-videoId: 2qU9L_ecEZY
+#videoId: 2qU9L_ecEZY
 # Use cover if you not use video
 cover: 
  image: "/img/cover.webp"
- url: "#"
+ url: "https://www.youtube.com/watch?v=2qU9L_ecEZY"
 # Redcirlce use this concept - with show: true
 redcircle: 
  show: false
  url: "https://api.podcache.net/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/0c96be9d-da48-4bd1-a9e2-1c3cb9625c04"
  id: "0c96be9d-da48-4bd1-a9e2-1c3cb9625c04"
-# SImply Redcircle just use iframe - switch redcrircle false first
+# Simplify Redcircle just use iframe - switch redcrircle false first
 redcircle_embed: "https://redcircle.com/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/0c96be9d-da48-4bd1-a9e2-1c3cb9625c04?"
 tags: 
   - e005
@@ -24,6 +24,7 @@ tags:
   - eminent-domain
 ---
 ## Description
+
 The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment.
 
 In 1975, Vine Deloria, Jr., wrote an article in Akwesasne Notes pondering “the future of Indians”. In 2025, fifty years later, a law review article proposed that “tribes” should have powers of “eminent domain” to “take” land for “public use”. 

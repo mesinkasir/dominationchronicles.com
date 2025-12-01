@@ -4,37 +4,27 @@ description: "A dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Op
 image: /img/podcast/cover-art2.webp
 duration: "55:56"
 publishDate: 2025-11-23
-videoId: 2qU9L_ecEZY
+#videoId: 2qU9L_ecEZY
+cover: 
+ image: "/img/cover.webp"
+ url: "https://www.youtube.com/watch?v=2qU9L_ecEZY"
+redcircle: 
+ show: false
+ url: "https://api.podcache.net/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/b2020210-4fce-4add-9d32-23eb8e14e9c6"
+ id: "b2020210-4fce-4add-9d32-23eb8e14e9c6"
 tags: 
   - e006
   - law
   - lingustics
   - eminent-domain
 ---
-<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/b2020210-4fce-4add-9d32-23eb8e14e9c6"></script>
-    <div class="redcirclePlayer-b2020210-4fce-4add-9d32-23eb8e14e9c6"></div>
-    <style>
-    .redcircle-link:link {
-        color: #ea404d;
-        text-decoration: none;
-    }
-    .redcircle-link:hover {
-        color: #ea404d;
-    }
-    .redcircle-link:active {
-        color: #ea404d;
-    }
-    .redcircle-link:visited {
-        color: #ea404d;
-    }
-</style>
-<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="/redcircle/">RedCircle</a></p>
+
+## Description
 
 Dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Opens a Path to Tectonic Changes in US Law
 
 
-Episode 6: When Supreme Court Justices Question Plenary Power
--------------------------------------------------------------
+### Episode 6: When Supreme Court Justices Question Plenary Power
 
 Episode 6 marks a turning point in the long debate over federal domination of Native Nations. Steven T. Newcomb and Peter d'Errico walk through a recent Supreme Court dissent from Justices Thomas and Gorsuch that challenges the very foundation of *plenary power*---the claim that Congress holds total authority over Native Peoples. This power has shaped U.S. Indian law since the nineteenth century and rests on old racial assumptions and the so-called Doctrine of Discovery.
 
