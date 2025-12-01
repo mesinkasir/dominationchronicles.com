@@ -2,7 +2,7 @@
 title: "E005: The Future of Indians"
 description: "The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment."
 image: /img/podcast/cover-art2.webp
-duration: "35:49"
+duration: "35:48"
 publishDate: 2025-11-22
 videoId: 2qU9L_ecEZY
 tags: 
@@ -11,6 +11,25 @@ tags:
   - lingustics
   - eminent-domain
 ---
+<script async defer onload="redcircleIframe();" src="https://api.podcache.net/embedded-player/sh/2caa5839-9deb-419c-9347-2458812d9406/ep/0c96be9d-da48-4bd1-a9e2-1c3cb9625c04"></script>
+    <div class="redcirclePlayer-0c96be9d-da48-4bd1-a9e2-1c3cb9625c04"></div>
+    <style>
+    .redcircle-link:link {
+        color: #ea404d;
+        text-decoration: none;
+    }
+    .redcircle-link:hover {
+        color: #ea404d;
+    }
+    .redcircle-link:active {
+        color: #ea404d;
+    }
+    .redcircle-link:visited {
+        color: #ea404d;
+    }
+</style>
+<p style="margin-top:3px;margin-left:11px;font-family: sans-serif;font-size: 10px; color: gray;">Powered by <a class="redcircle-link" href="/redcircle">RedCircle</a></p>
+
 ## Description
 The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment.
 

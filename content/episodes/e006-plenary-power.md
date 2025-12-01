@@ -6,7 +6,7 @@ duration: "55:56"
 publishDate: 2025-11-23
 videoId: 2qU9L_ecEZY
 tags: 
-  - e005
+  - e006
   - law
   - lingustics
   - eminent-domain
