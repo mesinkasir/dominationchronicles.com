@@ -4,7 +4,7 @@ description: "A dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Op
 image: /img/podcast/cover-art2.webp
 duration: "55:56"
 publishDate: 2025-11-23
-#videoId: 
+#videoId: 2qU9L_ecEZY
 cover: 
  image: "/img/cover.webp"
  url: "https://www.youtube.com/watch?v=2qU9L_ecEZY"
@@ -19,11 +19,12 @@ tags:
   - eminent-domain
 ---
 
+## Description
+
 Dramatic Dissent by Supreme Court Justices Gorsuch and Thomas Opens a Path to Tectonic Changes in US Law
 
 
-Episode 6: When Supreme Court Justices Question Plenary Power
--------------------------------------------------------------
+### Episode 6: When Supreme Court Justices Question Plenary Power
 
 Episode 6 marks a turning point in the long debate over federal domination of Native Nations. Steven T. Newcomb and Peter d'Errico walk through a recent Supreme Court dissent from Justices Thomas and Gorsuch that challenges the very foundation of *plenary power*---the claim that Congress holds total authority over Native Peoples. This power has shaped U.S. Indian law since the nineteenth century and rests on old racial assumptions and the so-called Doctrine of Discovery.
 
