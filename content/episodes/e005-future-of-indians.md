@@ -24,6 +24,7 @@ tags:
   - eminent-domain
 ---
 ## Description
+
 The confluence of a 1975 article by Vine Deloria, Jr., and a 2025 law review article sparks a conversation about what's roiling our minds at the moment.
 
 In 1975, Vine Deloria, Jr., wrote an article in Akwesasne Notes pondering “the future of Indians”. In 2025, fifty years later, a law review article proposed that “tribes” should have powers of “eminent domain” to “take” land for “public use”. 

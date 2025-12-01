@@ -20,7 +20,7 @@ tags:
   - linguistics
 ---
 
-## Description
+<h2>Description</h2>
 
 Our conversation is sparked by a discussion of Quantum Information Panpsychism between physicist Federico Faggin and philosopher Hans Busstra [youtube](https://www.youtube.com/watch?v=0FUFewGHLLg).
 
@@ -64,3 +64,6 @@ Episode 7 invites listeners to rethink existence at the most basic level. If qua
 
 ## Citation
 Steve Newcomb and Peter d’Errico, "E007: A Quantum View of 'Free Existence' as Entangled Indeterminacy," _Domination Chronicles_ (Podcast), December 1, 2025. <https://dominationchronicles.com/episodes/e007-quantum-view/>.
+
+- [Download RIS Citation](/citations/e007-quantum-view.ris)
+- [Download CSL JSON Citation](/citations/e007-quantum-view.csl.json)
