@@ -20,13 +20,12 @@ tags:
   - linguistics
 ---
 
-<h2>Description</h2>
+
+## Description
+[Listen Now](https://redcircle.com/shows/2caa5839-9deb-419c-9347-2458812d9406/ep/ae7ea335-6e9c-4f4f-a1c3-82523e8cc98c)
+
 
 Our conversation is sparked by a discussion of Quantum Information Panpsychism between physicist Federico Faggin and philosopher Hans Busstra [youtube](https://www.youtube.com/watch?v=0FUFewGHLLg).
-
-
-https://www.youtube.com/watch?v=0FUFewGHLLg
-
 
 In this episode, Steve Newcomb and Peter d'Errico explore how quantum theory can help us rethink the meaning of **free existence**. Their conversation starts with a video dialogue between physicist Federico Faggin and philosopher Hans Busstra, where Faggin describes consciousness as something non-physical and deeply relational. That frame opens a path for Steve and Peter to revisit a question central to this project: *What did colonizing powers fail to understand about the free existence of Indigenous Peoples?*
 
