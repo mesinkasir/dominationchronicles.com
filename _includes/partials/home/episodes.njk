@@ -5,8 +5,8 @@
         <p>{{widget.episode.text}}</p>
         </header>
         <div class="row g-4">
-            {% for e in collections.episodes | reverse | limit(6) %}<div class="col-lg-4 col-md-6 p-1">
-                <div class="card bg-dark-secondary h-100 border-0 shadow-sm">
+            {% for e in collections.episodes | reverse | limit(6) %}<div class="col-lg-4 p-2">
+                <div class="card card-podcast bg-dark-secondary h-100 border-0 shadow-sm">
                     {% if e.data.image %}
                         {% if loop.index0 == 0 %}
                             <img src="{{e.data.image}}"

@@ -54,11 +54,11 @@ export default async function() {
 
 	// Build initial episode objects
 	const episodes = feed.items.map(item => {
-			let episodeImageUrl = 'placeholder.png';
+			let episodeImageUrl = '/img/placeholder.webp';
 			if (item.episodeImage && item.episodeImage.length > 0) {
-				episodeImageUrl = item.episodeImage[0].href || item.episodeImage[0].url || 'placeholder.png';
+				episodeImageUrl = item.episodeImage[0].href || item.episodeImage[0].url || '/img/placeholder.webp';
 			}
-			if (episodeImageUrl === 'placeholder.png' && feed.image && feed.image.url) {
+			if (episodeImageUrl === '/img/placeholder.webp' && feed.image && feed.image.url) {
 				episodeImageUrl = feed.image.url;
 			}
 

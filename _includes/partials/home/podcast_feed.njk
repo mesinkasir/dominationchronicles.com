@@ -5,7 +5,7 @@
     <div id="podcast-feed-container row" class="instagram-grid"> 
 {%- if podcast and podcast.length > 0 -%}
     {%- for episode in podcast | reverse -%}
-    <div class="card bg-dark-secondary h-100 border-0 shadow-sm podcast-feed-item col-md-4">
+    <div class="card bg-dark-secondary h-100 border-0 shadow-sm podcast-feed-item col-lg-10"><!-- changed col-md-4 to col-lg-10-->
         <a href="{{ episode.redcircleLink }}" target="_blank" rel="noopener noreferrer" title="{{ episode.title }}">
             <picture>
             <source type="image/webp" 
